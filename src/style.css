@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #e3ffe3;
+  min-width: 250px;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.page {
+  padding: 0 1.5rem;
+}
+
+nav h1 {
+  font-size: 2.5rem;
+  color: #444d44;
+}
+
+.navbar--controlButtons {
+  display: flex;
+  color: #222b22;
+  flex-wrap: wrap;
+}
+
+.navbar--controlButtons button {
+  display: flex;
+  gap: 0.1rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar--area {
+  margin-right: 0.75rem;
+}
+.navbar--region {
+  margin-right: auto;
+}
+
+.navbar--sort,
+.navbar--filter {
+  border-radius: 2rem;
+  border: none;
+  background-color: #8fff8f;
+  margin-bottom: 0.5rem;
+}
+
+.navbar--filter {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  gap: 0.2rem;
+  height: 62px;
+}
+
+.navbar--filter:hover {
+  text-decoration: underline;
+}
+
+.navbar--sort {
+  padding: 0.3rem 1.2rem 0.3rem 0.7rem;
+  font-size: 1.4rem;
+}
+
+.card--wrap {
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  background-color: #ccffcc;
+  color: #222b22;
+}
+
+.card--wrap p {
+  margin: 0.1rem 0;
+}
+
+.card--wrap h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 0 5rem;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.pagination button.active {
+  font-weight: 900;
+  border-color: #101010;
+  background: #8fff8f;
+  color: #101010;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: rgb(255, 255, 255);
+}
